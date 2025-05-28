@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import { Link } from 'react-router-dom';
+
 export default function Home() {
     return <div style={{backgroundColor: "#f1e940"}}>
 
@@ -65,7 +67,7 @@ export default function Home() {
                                 stands at
                                 the forefront of the
                                 tech industry, continually pushing boundaries and setting new standards.</p><br />
-                            <a href="about.html" className="button">Learn More</a>
+                            <Link to="/about" className="button">Learn More</Link>
                             <br />
                         </div>
                     </div>
@@ -112,7 +114,7 @@ export default function Home() {
                         skills, CSC provides
                         the knowledge and hands-on experience to help you succeed.</p>
                     <div>
-                        <a href="courses.html" className="button">More Courses...</a>
+                        <Link to="/courses" className="button">More Courses...</Link>
                     </div>
                 </div><br />
             </div>
@@ -154,7 +156,7 @@ export default function Home() {
                                 more skills and
                                 knowledge and start your new journey forwarding to your career.
                             </p>
-                            <a href="about.html" className="button">Learn More</a>
+                            <Link to="/about" className="button">Learn More</Link>
                             <br /><br />
                         </div>
                     </div>
