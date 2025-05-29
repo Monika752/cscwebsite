@@ -1,12 +1,16 @@
 export default function Gallery(){
-    return <div>
+    return <div style={{ 
+    // backgroundImage: `url('/images/cover.jpg')`,
+    backgroundColor: 'rgb(173, 173, 173',
+    // backgroundPosition: 'center',
+  }}>
 
          <div className="container">
             <div style={{backgroundColor: "#175692"}}>
                 <h2 className=" d-flex justify-content-center m-2 text-white">Gallery</h2>
             </div>
         </div>
-         <div className=" container gallery-container">
+         <div className=" container gallery-container cardtrans">
             <div className="gallery-item"><img src="gallery images/image1.jpeg" alt="images"/>
             </div>
             <div className="gallery-item"><img src="gallery images/image2.jpeg" alt="images"/>
