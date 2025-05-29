@@ -48,14 +48,18 @@ const ReviewForm = () => {
     };
 
     return (
-        <div>
+        <div style={{ 
+    backgroundImage: `url('/images/cover.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}>
             <ToastContainer />
             <div class="container">
                 <div style={{ backgroundColor: "#175692" }}>
                     <h2 class=" d-flex justify-content-center m-2 text-white">Review and Feedback Form</h2>
                 </div>
             </div>
-            <div className="container review-container">
+            <div className="container review-container containertrans">
                 <form id="reviewForm" onSubmit={handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" value={reviewData.name} onChange={handleChange} required />
