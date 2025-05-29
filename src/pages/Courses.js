@@ -74,7 +74,7 @@ const Courses = () => {
                 <div style={{ backgroundColor: '#175692' }}>
                     <h2 className="d-flex justify-content-center m-2 text-white">{section.title}</h2>
                 </div>
-                <div className="container p-4" style={{ backgroundColor: '#f2d53c' }}>
+                <div className="container p-4 cardtrans" style={{ backgroundColor: '' }}>
                     <div className="row">
                         {section.courses.map((course, courseIndex) => {
                             const formattedCourse = course.replace(/[()]/g, '').replace(/ /g, '');
@@ -101,7 +101,11 @@ const Courses = () => {
     };
 
     return (
-        <div style={{ backgroundColor: '#f1e940' }}>
+        <div style={{ 
+    backgroundImage: `url('/images/cover1.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}>
             <div className="container my-2">
                 <div style={{ backgroundColor: '#2189b3' }}>
                     <h2 className="d-flex justify-content-center text-white">Courses Offered</h2>
