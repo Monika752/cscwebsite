@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 
 export default function ContactUs() {
-    return <div>
+    return <div style={{ 
+    backgroundImage: `url('/images/cover.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}>
 
         <div className="container">
             <div style={{ backgroundColor: "#175692" }}>
@@ -9,7 +13,7 @@ export default function ContactUs() {
             </div>
         </div>
 
-        <div style={{ textAlign: "center" }}>
+        <div className="containertrans"style={{ textAlign: "center" }}>
             <div className="courses-container">
                 <div class="course">
                     <img src="images/Python.png" alt="Course 1" />
@@ -32,9 +36,9 @@ export default function ContactUs() {
             </h2>
 
             <br /><br />
-        </div>
+        </div><br/>
 
-        <div className="container p-3" style={{ backgroundColor: "aliceblue" }}>
+        <div className="container p-3 containertrans" style={{ backgroundColor: "aliceblue" }}>
             <h2> &nbsp;<u>Contact-info</u></h2><br />
             <div style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "20px" }}>
                 <p><strong> Email id:</strong> cscperungudiomr@gmail.com</p>
