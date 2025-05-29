@@ -1,6 +1,10 @@
 import React from "react";
 export default function About() {
-    return <div>
+    return <div style={{ 
+    backgroundImage: `url('/images/cover1.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}>
         {/* aboutus */}
         <div className="container">
             <div style={{ backgroundColor: "#175692" }}>
@@ -8,8 +12,8 @@ export default function About() {
             </div>
         </div>
 
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/about us.png" class="img-fluid rounded-start p-4" alt="logo" />
@@ -42,8 +46,8 @@ export default function About() {
                 <h2 className=" d-flex justify-content-center m-2 text-white">About CSC Network</h2>
             </div>
         </div>
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/iso.png" class="img-fluid rounded-start p-4" alt="logo" />
@@ -76,8 +80,8 @@ export default function About() {
                 <h3 className=" d-flex justify-content-center m-2 text-white">Founder of CSC</h3>
             </div>
         </div>
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4 justify-content-center">
                         <img src="images/founder.PNG" class="img-fluid rounded-start p-4" alt="logo" />
@@ -118,8 +122,8 @@ export default function About() {
                 <h3 className=" d-flex justify-content-center m-2 text-white">Our Vision</h3>
             </div>
         </div>
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/vision.png" class="img-fluid rounded-start p-4" alt="logo"/>
@@ -153,8 +157,8 @@ export default function About() {
                 <h3 className=" d-flex justify-content-center m-2 text-white">Our Mission</h3>
             </div>
         </div>
-        <div className="container my-2">
-            <div className="card m-2" style={{maxWidth: "100"}}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{maxWidth: "100"}}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/mission.png" class="img-fluid rounded-start p-4" alt="logo"/>
