@@ -1,10 +1,12 @@
-import React from "react";
-import { Link } from 'react-router-dom';
-
+import React from "react"
 export default function Home() {
-    return <div style={{backgroundColor: "#f1e940"}}>
+    return <div style={{ 
+    backgroundImage: `url('/images/cover1.jpg')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}>
 
-        <div className="container" style={{ marginTop: "20px" }}>
+        <div className="container containertrans" style={{ marginTop: "15px" }}>
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -40,8 +42,8 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/home1.png" className="img-fluid rounded-start p-4" style={{ borderRadius: "50%" }}
@@ -49,9 +51,9 @@ export default function Home() {
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">About Us</h5>
+                            <h5 className="card-title" style={{textDecoration:"None"}}>About Us</h5>
                             <p>
-                                <h5>CSC Computer Education</h5>
+                                <h5 style={{textDecoration:"None"}}>CSC Computer Education</h5>
                                 <p>
                                     At CSC, We are dedicated to providing Top-notch Computer Education and
                                     Training to
@@ -67,7 +69,7 @@ export default function Home() {
                                 stands at
                                 the forefront of the
                                 tech industry, continually pushing boundaries and setting new standards.</p><br />
-                            <Link to="/about" className="button">Learn More</Link>
+                            <a href="about.html" className="button">Learn More</a>
                             <br />
                         </div>
                     </div>
@@ -81,8 +83,8 @@ export default function Home() {
             </div>
         </div>
 
-        <div style={{ textAlign: "center" }}>
-            <div className="container">
+        <div className="containertrans"style={{ textAlign: "center" }}>
+            <div className="container cardtrans">
                 <div className="homecourse">
                     <img src="images/Python.png" alt="Course 1" />
                 </div>
@@ -100,8 +102,8 @@ export default function Home() {
                 </div>
             </div>
             <div className="card-body">
-                <div className=" container bg-white p-4">
-                    <p className="card-text"
+                <div className=" container p-4 containertrans">
+                    <p className="card-text cardtrans"
                         style={{ fontFamily: "Segoe UI", fontWeight: "400", fontSize: "17px", textAlign: "left" }}>At CSC, we
                         are
                         offering a diverse range of courses designed to equip you with
@@ -114,14 +116,14 @@ export default function Home() {
                         skills, CSC provides
                         the knowledge and hands-on experience to help you succeed.</p>
                     <div>
-                        <Link to="/courses" className="button">More Courses...</Link>
+                        <a href="courses.html" className="button">More Courses...</a>
                     </div>
                 </div><br />
             </div>
         </div>
 
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/why.jpg" className="img-fluid rounded-start p-4"
@@ -129,7 +131,7 @@ export default function Home() {
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">Why to choose us ?</h5>
+                            <h5 className="card-title" style={{textDecoration:"None"}}>Why to choose us ?</h5>
                             <p>Choosing CSC means opting for excellence, innovation, and a commitment to your
                                 success.
                                 We stand out
@@ -156,7 +158,7 @@ export default function Home() {
                                 more skills and
                                 knowledge and start your new journey forwarding to your career.
                             </p>
-                            <Link to="/about" className="button">Learn More</Link>
+                            <a href="about.html" className="button">Learn More</a>
                             <br /><br />
                         </div>
                     </div>
@@ -168,8 +170,8 @@ export default function Home() {
             <div style={{backgroundColor: "#175692"}}>
                 <h2 className=" d-flex justify-content-center m-2 text-white">Educational Partners</h2>
             </div>
-            <div className="card">
-                <ul className="list-group list-group-flush">
+            <div className="card containertrans">
+                <ul className="list-group list-group-flush cardtrans">
                     <li className="list-group-item">Tally India Pvt Ltd</li>
                     <li className="list-group-item">IBT Institute Pvt Ltd(Bank/ SSC/ Railways/ TNPSC Coaching)</li>
                     <li className="list-group-item">Speak Easy English Training (P) Ltd.</li>
