@@ -12,40 +12,31 @@
     border-radius: 10px;
 }
 
-
-/* Ensure the carousel controls are properly positioned and centered */
 .carousel-control-prev,
 .carousel-control-next {
-    /* Existing styles for size, shape, background, transitions */
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
     transition: background-color 0.3s ease, transform 0.2s ease;
-
-    /* KEY CHANGES FOR CENTERING: */
-    position: absolute; /* Ensures they are positioned relative to the carousel container */
-    top: 50%; /* Moves the top edge of the button to the vertical middle of the parent */
-    transform: translateY(-50%); /* Shifts the button up by half of its own height, perfectly centering it */
-    z-index: 1; /* Ensures they appear above the images */
-
-    /* Ensure flexbox is still used for centering the icon INSIDE the button */
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Ensure the icon itself is white and has a shadow */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.8));
 }
 
-/* Hover effects for the buttons */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: rgba(255, 255, 255, 0.6);
-    transform: translateY(-50%) scale(1.1); /* Maintain centering while scaling */
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-50%) scale(1.1);
 }
 .navbar-toggler {
   border-color: white; 
