@@ -102,7 +102,7 @@ const Courses = () => {
 
     return (
         <div style={{ 
-    backgroundImage: `url('/images/cover1.jpg')`,
+    backgroundImage: `url('/images/cover1.webp')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}>
