@@ -1,33 +1,22 @@
-import React, { memo, useEffect, useCallback } from "react";
-import { lazy, Suspense } from "react";
-import { Carousel as BootstrapCarousel } from "bootstrap"; 
-import Carousel from "../components/Carousel"; 
-
+import React, { useCallback } from "react";
+import Carousel from "../components/Carousel"; // Ensure this path is correct
 
 export default function Home() {
   const handleClick = useCallback(() => {
     console.log("Button clicked!");
   }, []);
 
-  useEffect(() => {
-    const carouselElement = document.querySelector("#carouselExampleIndicators");
-    if (carouselElement) {
-      new BootstrapCarousel(carouselElement, {
-        interval: 3000,
-        ride: "carousel",
-      });
-    }
-  }, []);
-
   return (
     <>
       <div
         style={{
-          backgroundImage: `url('/images/cover1.webp')`,
+          backgroundImage: `url('/images/cover1.webp')`, // Consider optimizing this background image too
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
+        {/* Render the Carousel component here */}
+        <Carousel />
 
         <div className="container my-2 containertrans">
           <div className="card m-2 cardtrans" style={{ maxWidth: "100%" }}>
