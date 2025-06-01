@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function ContactUs() {
     return <div style={{ 
-    backgroundImage: `url('/images/cover.webp')`,
+    backgroundImage: `url('/images/cover1.webp')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}>
