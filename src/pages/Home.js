@@ -1,8 +1,8 @@
 import React, { memo, useEffect, useCallback } from "react";
 import { lazy, Suspense } from "react";
 import { Carousel as BootstrapCarousel } from "bootstrap"; 
+import Carousel from "../components/Carousel"; 
 
-const Carousel = lazy(() => import("../components/Carousel"));
 
 export default function Home() {
   const handleClick = useCallback(() => {
@@ -28,9 +28,6 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
-        <Suspense fallback={<div style={{ minHeight: "400px" }}>Loading...</div>}>
-          <Carousel />
-        </Suspense>
 
         <div className="container my-2 containertrans">
           <div className="card m-2 cardtrans" style={{ maxWidth: "100%" }}>
