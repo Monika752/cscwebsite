@@ -6,7 +6,7 @@ export default function Home() {
         backgroundImage: `url('/images/cover1.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-      }}>
+    }}>
 
         <div className="container containertrans" style={{ marginTop: "20px" }}>
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -19,16 +19,20 @@ export default function Home() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="images/slideimage1.webp" className="d-block w-100" alt="image1" />
+                        {/* REPLACE WITH ACTUAL DIMENSIONS */}
+                        <img src="images/slideimage1.webp" className="d-block w-100" alt="image1" width="1200" height="400" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage2.webp" className="d-block w-100" alt="image3" />
+                        {/* REPLACE WITH ACTUAL DIMENSIONS */}
+                        <img src="images/slideimage2.webp" className="d-block w-100" alt="image3" width="1200" height="400" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage3.webp" className="d-block w-100" alt="image4" />
+                        {/* REPLACE WITH ACTUAL DIMENSIONS */}
+                        <img src="images/slideimage3.webp" className="d-block w-100" alt="image4" width="1200" height="400" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage4.webp" className="d-block w-100" alt="image4" />
+                        {/* REPLACE WITH ACTUAL DIMENSIONS */}
+                        <img src="images/slideimage4.webp" className="d-block w-100" alt="image4" width="1200" height="400" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -48,8 +52,9 @@ export default function Home() {
             <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
+                        {/* REPLACE WITH ACTUAL DIMENSIONS */}
                         <img src="images/home1.webp" className="img-fluid rounded-start p-4" style={{ borderRadius: "50%" }}
-                            alt="logo" />
+                            alt="logo" width="400" height="400" />
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="card-body">
@@ -88,19 +93,24 @@ export default function Home() {
         <div className="containertrans" style={{ textAlign: "center" }}>
             <div className="container cardtrans">
                 <div className="homecourse">
-                    <img src="images/Python.png" alt="Course 1" />
+                    {/* REPLACE WITH ACTUAL DIMENSIONS, add loading="lazy" if not in viewport initially */}
+                    <img src="images/Python.png" alt="Course 1" width="200" height="200" loading="lazy" />
                 </div>
                 <div className="homecourse">
-                    <img src="images/C++.png" alt="Course 2" />
+                    {/* REPLACE WITH ACTUAL DIMENSIONS, add loading="lazy" if not in viewport initially */}
+                    <img src="images/C++.png" alt="Course 2" width="200" height="200" loading="lazy" />
                 </div>
                 <div className="homecourse">
-                    <img src="images/JAVA.png" alt="Course 3" />
+                    {/* REPLACE WITH ACTUAL DIMENSIONS, add loading="lazy" if not in viewport initially */}
+                    <img src="images/JAVA.png" alt="Course 3" width="200" height="200" loading="lazy" />
                 </div>
                 <div className="homecourse">
-                    <img src="images/HTML.png" alt="Course 4" />
+                    {/* REPLACE WITH ACTUAL DIMENSIONS, add loading="lazy" if not in viewport initially */}
+                    <img src="images/HTML.png" alt="Course 4" width="200" height="200" loading="lazy" />
                 </div>
                 <div className="homecourse">
-                    <img src="images/Tally.png" alt="Course 5" />
+                    {/* REPLACE WITH ACTUAL DIMENSIONS, add loading="lazy" if not in viewport initially */}
+                    <img src="images/Tally.png" alt="Course 5" width="200" height="200" loading="lazy" />
                 </div>
             </div>
             <div className="card-body">
@@ -128,8 +138,9 @@ export default function Home() {
             <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
+                        {/* REPLACE WITH ACTUAL DIMENSIONS */}
                         <img src="images/why.webp" className="img-fluid rounded-start p-4"
-                            style={{borderRadius: "50%", height: "auto", width: "100%"}} alt="logo" />
+                            style={{borderRadius: "50%", height: "auto", width: "100%"}} alt="logo" width="400" height="400" />
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="card-body">
