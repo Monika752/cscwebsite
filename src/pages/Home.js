@@ -8,7 +8,7 @@ export default function Home() {
         backgroundPosition: "center",
       }}>
 
-        <div className="container" style={{ marginTop: "20px" }}>
+        <div className="container containertrans" style={{ marginTop: "20px" }}>
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -44,8 +44,8 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/home1.webp" className="img-fluid rounded-start p-4" style={{ borderRadius: "50%" }}
@@ -85,8 +85,8 @@ export default function Home() {
             </div>
         </div>
 
-        <div style={{ textAlign: "center" }}>
-            <div className="container">
+        <div className="containertrans" style={{ textAlign: "center" }}>
+            <div className="container cardtrans">
                 <div className="homecourse">
                     <img src="images/Python.png" alt="Course 1" />
                 </div>
@@ -124,8 +124,8 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="container my-2">
-            <div className="card m-2" style={{ maxWidth: "100" }}>
+        <div className="container my-2 containertrans">
+            <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
                         <img src="images/why.webp" className="img-fluid rounded-start p-4"
