@@ -1,8 +1,7 @@
 import React, { memo, useEffect, useCallback } from "react";
 import { lazy, Suspense } from "react";
-import bootstrap from "bootstrap";
+import { Carousel as BootstrapCarousel } from "bootstrap"; 
 
-// Lazy load the Carousel component
 const Carousel = lazy(() => import("./Carousel"));
 
 export default function Home() {
@@ -10,12 +9,11 @@ export default function Home() {
     console.log("Button clicked!");
   }, []);
 
-
   useEffect(() => {
     const carouselElement = document.querySelector("#carouselExampleIndicators");
     if (carouselElement) {
-      new bootstrap.Carousel(carouselElement, {
-        interval: 3000, 
+      new BootstrapCarousel(carouselElement, {
+        interval: 3000,
         ride: "carousel",
       });
     }
@@ -23,7 +21,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Background Image */}
       <div
         style={{
           backgroundImage: `url('/images/cover1.webp')`,
@@ -31,12 +28,10 @@ export default function Home() {
           backgroundPosition: "center",
         }}
       >
-        {/* Lazy-loaded Carousel */}
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div style={{ minHeight: "400px" }}>Loading...</div>}>
           <Carousel />
         </Suspense>
 
-        {/* About Us Section */}
         <div className="container my-2 containertrans">
           <div className="card m-2 cardtrans" style={{ maxWidth: "100%" }}>
             <div className="row g-0">
@@ -72,7 +67,7 @@ export default function Home() {
         </div>
 
         <div className="containertrans text-center">
-          <div className="container cardtrans">
+          <div className="container cardtrans d-flex justify-content-center flex-wrap gap-3">
             {["Python", "C++", "JAVA", "HTML", "Tally"].map((course, index) => (
               <div key={index} className="homecourse">
                 <img
@@ -104,6 +99,8 @@ export default function Home() {
                   className="img-fluid rounded-start p-4"
                   style={{ borderRadius: "50%", width: "100%" }}
                   alt="why choose us"
+                  width="250"
+                  height="250"
                 />
               </div>
               <div className="col-md-8">
@@ -119,7 +116,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Educational Partners Section */}
+        {/* Educational Partners */}
         <div className="container">
           <div style={{ backgroundColor: "#175692" }}>
             <h2 className="text-center text-white p-2">Educational Partners</h2>
