@@ -19,16 +19,16 @@ export default function Home() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="images/slideimage1.png" className="d-block w-100" alt="image1" />
+                        <img src="images/slideimage1.webp" className="d-block w-100" alt="image1" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage2.png" className="d-block w-100" alt="image3" />
+                        <img src="images/slideimage2.webp" className="d-block w-100" alt="image3" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage3.png" className="d-block w-100" alt="image4" />
+                        <img src="images/slideimage3.webp" className="d-block w-100" alt="image4" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage4.png" className="d-block w-100" alt="image4" />
+                        <img src="images/slideimage4.webp" className="d-block w-100" alt="image4" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -53,9 +53,9 @@ export default function Home() {
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">About Us</h5>
+                            <h5 className="card-title" style={{textDecoration: "None"}}>About Us</h5>
                             <p>
-                                <h5>CSC Computer Education</h5>
+                                <h5  style={{textDecoration: "None"}}>CSC Computer Education</h5>
                                 <p>
                                     At CSC, We are dedicated to providing Top-notch Computer Education and
                                     Training to
@@ -133,7 +133,7 @@ export default function Home() {
                     </div>
                     <div className="col-12 col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">Why to choose us ?</h5>
+                            <h5 className="card-title"  style={{textDecoration: "None"}}>Why to choose us ?</h5>
                             <p>Choosing CSC means opting for excellence, innovation, and a commitment to your
                                 success.
                                 We stand out
