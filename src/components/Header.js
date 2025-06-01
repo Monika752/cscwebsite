@@ -6,7 +6,7 @@ export default function Header() {
                 <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#175692" }}>
                     <div className=" container">
                         <Link className="navbar-brand text-white" to="/">
-                            <img src="/images/csc logo.PNG" alt="logo" style={{ height: "40px", width: "60px" }} />
+                            <img src="/images/CSClogo.jpg" alt="logo" style={{ height: "40px", width: "60px" }} />
                         </Link>
 
                         <div>
