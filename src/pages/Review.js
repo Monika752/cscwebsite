@@ -49,7 +49,7 @@ const ReviewForm = () => {
 
     return (
         <div style={{ 
-    backgroundImage: `url('/images/cover.jpg')`,
+    backgroundImage: `url('/images/cover.webp')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}>
