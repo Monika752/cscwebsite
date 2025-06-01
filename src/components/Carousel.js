@@ -15,17 +15,20 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div
+   <div
       id="carouselExampleIndicators"
       className="carousel slide"
       ref={carouselRef}
       style={{
+        aspectRatio: "16 / 9",
         width: "100%",
-        height: "400px", 
+        maxHeight: "500px",
         overflow: "hidden",
-        position: "relative",
+        backgroundColor: "#000", 
       }}
     >
+
+
       <div className="carousel-inner" style={{ height: "100%" }}>
         {["cover1.webp", "cover2.webp", "cover3.webp"].map((img, index) => (
           <div
@@ -33,15 +36,15 @@ export default function Carousel() {
             className={`carousel-item ${index === 0 ? "active" : ""}`}
             style={{ height: "100%" }}
           >
-            <img
-              loading="eager"
-              src={`/images/${img}`}
-              className="d-block w-100"
-              alt={`Slide ${index + 1}`}
+           <img
+              src="/images/cover1.webp"
+              alt="..."
+              width="1200"
+              height="675"
               style={{
-                objectFit: "cover",
-                width: "100%",
-                height: "100%", 
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover"
               }}
             />
           </div>
