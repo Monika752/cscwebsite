@@ -2,7 +2,7 @@ import React, { memo, useEffect, useCallback } from "react";
 import { lazy, Suspense } from "react";
 import { Carousel as BootstrapCarousel } from "bootstrap"; 
 
-const Carousel = lazy(() => import("./components/Carousel"));
+const Carousel = lazy(() => import("../components/Carousel"));
 
 export default function Home() {
   const handleClick = useCallback(() => {
