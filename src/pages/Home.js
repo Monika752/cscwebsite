@@ -1,7 +1,7 @@
 import React from "react"
 export default function Home() {
     return <div style={{ 
-    backgroundImage: `url('/images/cover1.jpg')`,
+    backgroundImage: `url('/images/cover1.webp')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}>
@@ -17,16 +17,16 @@ export default function Home() {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="images/slideimage1.png" className="d-block w-100" alt="image1" />
+                        <img src="images/slideimage1.webp" className="d-block w-100" alt="image1" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage2.png" className="d-block w-100" alt="image3" />
+                        <img src="images/slideimage2.webp" className="d-block w-100" alt="image3" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage3.png" className="d-block w-100" alt="image4" />
+                        <img src="images/slideimage3.webp" className="d-block w-100" alt="image4" />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/slideimage4.png" className="d-block w-100" alt="image4" />
+                        <img src="images/slideimage4.webp" className="d-block w-100" alt="image4" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
-                        <img src="images/home1.png" className="img-fluid rounded-start p-4" style={{ borderRadius: "50%" }}
+                        <img src="images/home1.webp" className="img-fluid rounded-start p-4" style={{ borderRadius: "50%" }}
                             alt="logo" />
                     </div>
                     <div className="col-12 col-md-8">
@@ -126,7 +126,7 @@ export default function Home() {
             <div className="card m-2 cardtrans" style={{ maxWidth: "100" }}>
                 <div className="row g-0">
                     <div className="col-12 col-md-4">
-                        <img src="images/why.jpg" className="img-fluid rounded-start p-4"
+                        <img src="images/why.webp" className="img-fluid rounded-start p-4"
                             style={{borderRadius: "50%", height: "auto", width: "100%"}} alt="logo" />
                     </div>
                     <div className="col-12 col-md-8">
