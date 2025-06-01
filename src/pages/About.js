@@ -1,7 +1,7 @@
 import React from "react";
 export default function About() {
     return <div style={{ 
-    backgroundImage: `url('/images/cover1.jpg')`,
+    backgroundImage: `url('/images/cover1.webp')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}>
