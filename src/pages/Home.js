@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-    return <div style={{backgroundColor: "#f1e940"}}>
+    return <div style={{
+        backgroundImage: `url('/images/cover1.webp')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
 
         <div className="container" style={{ marginTop: "20px" }}>
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
